@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Slider Marquee</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .brand-slider {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            background-color: #f8f8f8;
+            padding: 10px 0;
+        }
+        .brand-track {
+            display: flex;
+            width: calc(250px * 10); /* Adjust based on number of logos */
+            animation: scroll 20s linear infinite;
+        }
+        .brand-track:hover {
+            animation-play-state: paused;
+        }
+        .brand-box {
+            flex: 0 0 auto;
+            width: 250px;
+            padding: 10px;
+        }
+        .brand-box img {
+            width: 100%;
+            height: auto;
+        }
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .brand-track {
+                width: calc(150px * 5);
+            }
+            .brand-box {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="brand-slider">
+        <div class="brand-track">
+            <div class="brand-box">
+              <img src="./assets/img/brands/Gree.png" alt="Gree logo">
+            </div>
+            <div class="brand-box">
+              <img src="./assets/img/brands/Haier.png" alt="Haier logo">
+            </div>
+            <div class="brand-box">
+              <img src="./assets/img/brands/Hisense.png" alt="Hisense logo">
+            </div>
+            <div class="brand-box">
+              <img src="./assets/img/brands/hitachi.png" alt="Hitachi logo">
+            </div>
+            <div class="brand-box">
+              <img src="./assets/img/brands/Media.png" alt="Media logo">
+            </div>
+            <div class="brand-box">
+              <img src="./assets/img/brands/Philips.png" alt="Philips logo">
+            </div>
+            <div class="brand-box">
+              <img src="./assets/img/brands/Samsung.png" alt="Samsung logo">
+            </div>
+            <div class="brand-box">
+              <img src="./assets/img/brands/Whirlpool.png" alt="Whirlpool logo">
+            </div>
+            <!-- Duplicate slides for continuous effect -->
+            <div class="brand-box">
+              <img src="./assets/img/brands/Gree.png" alt="Gree logo">
+            </div>
+            <div class="brand-box">
+              <img src="./assets/img/brands/Haier.png" alt="Haier logo">
+            </div>
+            <div class="brand-box">
+              <img src="./assets/img/brands/Hisense.png" alt="Hisense logo">
+            </div>
+            <div class="brand-box">
+              <img src="./assets/img/brands/hitachi.png" alt="Hitachi logo">
+            </div>
+            <div class="brand-box">
+              <img src="./assets/img/brands/Media.png" alt="Media logo">
+            </div>
+            <div class="brand-box">
+              <img src="./assets/img/brands/Philips.png" alt="Philips logo">
+            </div>
+            <div class="brand-box">
+              <img src="./assets/img/brands/Samsung.png" alt="Samsung logo">
+            </div>
+            <div class="brand-box">
+              <img src="./assets/img/brands/Whirlpool.png" alt="Whirlpool logo">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
